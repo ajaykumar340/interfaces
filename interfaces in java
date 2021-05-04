@@ -1,0 +1,52 @@
+interface printable{  
+ void print(); 
+ void display();
+ void contact();
+}  
+interface snowfall
+{
+    void kgf();
+    void rrr();
+}
+public class A6 implements printable,snowfall
+{  
+public void print()
+{
+ System.out.println("Hello....good morning india");
+    
+}  
+public void display()
+{
+    System.out.println("hello it is executed....");
+}
+public void contact()
+{
+    System.out.println("insid the contact method().....");
+}
+public void kgf()
+{
+    System.out.println("kgf is releasing in july 16.....");
+}
+public void rrr()
+{
+    System.out.println("rrr is relesing in july........");
+}
+public static void main(String args[])
+{  
+A6 obj = new A6();  
+obj.print();
+obj.display();
+obj.contact();
+obj.kgf();
+obj.rrr();
+ }  
+}  
+
+output:
+$javac A6.java
+$java -Xmx128M -Xms16M A6
+Hello....good morning india
+hello it is executed....
+insid the contact method().....
+kgf is releasing in july 16.....
+rrr is relesing in july........
